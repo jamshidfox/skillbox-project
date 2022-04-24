@@ -6,6 +6,10 @@ const colors = {
   btnRegisterOnHover: '#000000',
 }
 
+const employement = {
+  containerBg: '#272727',
+}
+
 const input = {
   backgroundColor: '#ffffff',
   backgroundColorHover: colors.grey,
@@ -14,5 +18,6 @@ const input = {
 
 export default {
   colors,
+  employement,
   input,
 }

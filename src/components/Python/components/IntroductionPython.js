@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, Col, Card, Button } from 'reactstrap'
-import { useTimer } from 'react-timer-hook'
+import { Col, Card, Button } from 'reactstrap'
 
 const Container = styled(Card)`
   display: flex;
@@ -44,12 +43,7 @@ const Btn = styled(Button)`
         background-color: ${({ theme }) => theme.colors.btnRegisterOnHover} 
     }
 `
-const IntroductionPython = (expiryTimestamp) => {
-  const { seconds, minutes, hours } = useTimer({
-    expiryTimestamp,
-    onExpire: () => console.warn('onExpire called'),
-    autoStart: true,
-  })
+const IntroductionPython = () => {
   return (
     <Container>
       <FirstContainer>
@@ -57,7 +51,7 @@ const IntroductionPython = (expiryTimestamp) => {
         <TimerDiv>
           <div>Участвует в распродаже Скидка 40% действует 1 день</div>
           <div>
-            <span>{hours}</span>: <span>{minutes}</span>: <span>{seconds}</span>
+            <span>10</span>: <span>20</span>: <span>40</span>
           </div>
         </TimerDiv>
       </FirstContainer>
